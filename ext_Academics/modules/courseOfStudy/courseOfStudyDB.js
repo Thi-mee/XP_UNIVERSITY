@@ -123,7 +123,6 @@ const editCourseOfStudy = async (courseOfStudy) => {
 }
 
 
-
 const removeCourseOfStudy = async (id) => {
   try {
     const result = await pool.query('DELETE FROM "AcadSchema"."CourseOfStudy" WHERE "CourseOfStudyId" = $1', [id]);
